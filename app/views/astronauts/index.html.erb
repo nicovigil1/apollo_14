@@ -7,13 +7,23 @@
     <title>Document</title>
 </head>
 <body>
+<div>
     <% @astronauts.each do |astronaut| %>
     <ul>
         <li>Name: <%= astronaut.name  %></li>
         <li>Age: <%= astronaut.age  %></li>
         <li>Job: <%= astronaut.job  %></li>
     </ul>
+    <div>
+        <h1>Space Missions</h1>
+        <p><%=astronaut.missions%></p>
+    </div>
     <%end%>
+</div>
+
+    <div>
+        <p>Average Age: <%=@average_age%></p>
+    </div>
         
 </body>
 </html>
