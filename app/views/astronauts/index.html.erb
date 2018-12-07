@@ -16,7 +16,7 @@
     </ul>
     <div>
         <h1>Space Missions</h1>
-        <p><%=astronaut.missions%></p>
+        <p><%= astronaut.missions.all.each do |mission| %></p>
     </div>
     <%end%>
 </div>

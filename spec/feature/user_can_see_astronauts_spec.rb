@@ -30,6 +30,7 @@ RSpec.describe 'as a visitor' do
 
 
             visit '/astronauts'
+            save_and_open_page
             # add within if time 
             expect(page).to have_content("New York State of Mind")
             expect(page).to have_content("Your Song")
